@@ -1,0 +1,47 @@
+/* Hivelight's page: a dark hedgerow around the meadow, the canvas centred
+   and kept at its 16:9 shape at any window size. */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  background: radial-gradient(1200px 700px at 50% 30%, #24401f 0%, #14240f 62%, #0b1507 100%);
+  font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+  color: #e8f3d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.stage {
+  text-align: center;
+  padding: 18px 12px 10px;
+}
+
+#game {
+  display: block;
+  width: min(1280px, 96vw, 170vh);
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55), 0 0 0 3px rgba(255, 217, 77, 0.16);
+  background: #79b0e8;
+  touch-action: none;
+  cursor: crosshair;
+}
+
+.hint {
+  margin: 12px 0 4px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: rgba(232, 243, 216, 0.66);
+}
